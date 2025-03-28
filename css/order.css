@@ -205,29 +205,29 @@
     width: 140px;
   }
   .itemSelect {
-    width: 290px;
+    width: 380px;
     margin-left: 10px;
   }
   .itemChoice {
-    width: 150px;
+    width: 180px;
   }
   .icode {
     margin-left: 10px;
   }
   .firstField input[type="text"] {
-    width: 120px;
+    width: 180px;
   }
   .itemName {
-    width: 90px;
+    width: 115px;
   }
   .price {
-    width: 70px;
+    width: 115px;
   }
   .qty {
-    width: 65px;
+    width: 90px;
   }
   .orderQty {
-    width: 280px;
+    width: 370px;
   }
   .btn {
     margin-top: 20px;
@@ -241,13 +241,21 @@
     margin-left: 25px;
   }
   .balance {
-    width: 250px;
+    width: 240px;
   }
   .purchase {
     margin-left: 10px;
   }
   .orderTableContainer {
     height: 150px;
+  }
+  button.purchases {
+    margin-left: 30px;
+  }
+
+  button.addItem {
+    margin-left: 75px;
+    width: 80px;
   }
 
   @media (min-width: 768px) and (max-width: 999px) {
