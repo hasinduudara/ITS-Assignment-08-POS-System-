@@ -21,7 +21,7 @@ $(document).ready(function () {
       addToTables(item);
       $(".form")[1].reset();
       itemCount();
-      alert("Item saved successfully");
+      alert("Do you want to add this item?");
     }
     if (!idExist) {
       $(".itemIdError").text("Id is Already exist");
@@ -46,7 +46,7 @@ $(document).ready(function () {
     removeRowById(id);
     $(".form")[1].reset();
     itemCount();
-    alert("Item removed successfully");
+    alert("Do you want to remove this item?");
   });
 
   $(".btnUpdateItem").on("click", function (event) {

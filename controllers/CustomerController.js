@@ -17,7 +17,7 @@ $(document).ready(function () {
       Customer.save(customer);
       addToTables(customer);
       $(".form")[0].reset();
-      alert("Customer saved successfully");
+      alert("Do you want to add this customer?");
       custCount();
     }
     if (!idExist) {
@@ -149,7 +149,7 @@ $(document).ready(function () {
     Customer.remove(customerId);
     removeRowById(customerId);
     $(".form")[0].reset();
-    alert("Customer removed successfully");
+    alert("Do you want to remove this customer?");
     custCount();
   });
 
