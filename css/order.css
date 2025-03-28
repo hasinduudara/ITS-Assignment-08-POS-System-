@@ -47,7 +47,7 @@
 .Invoice h3 {
   margin: -5px;
   padding: 10px;
-  background-color: rgb(79, 244, 96);
+  background-color: #00ad51;
   color: white;
 }
 .Invoice h5 {
@@ -87,7 +87,7 @@
 .itemSelect h3 {
   margin: -10px;
   padding: 10px;
-  background-color: rgb(79, 244, 96);
+  background-color: #00ad51;
   color: white;
 }
 .secondField {
@@ -155,13 +155,13 @@
 }
 .btnPurchase button {
   padding: 10px;
-  background-color: rgb(71, 251, 95);
+  background-color: #00ad51;
   border: transparent;
   color: white;
   border-radius: 5px;
 }
 .purchase h4 {
-  color: lightblue;
+  color: rgb(118, 201, 229);
 }
 .purchase h3 {
   color: red;

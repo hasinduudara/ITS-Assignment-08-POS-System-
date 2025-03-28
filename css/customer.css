@@ -32,19 +32,23 @@
   border: transparent;
 }
 .btnSave {
-  background-color: skyblue;
+  background-color: #007bff;
+  color: white;
 }
 .btnRemove {
   background-color: red;
+  color: white;
 }
 .btnUpdate {
   background-color: yellow;
 }
 .btnGetAll {
   background-color: green;
+  color: white;
 }
 .btnClear {
   background-color: red;
+  color: white;
 }
 .error {
   color: red;

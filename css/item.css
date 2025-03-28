@@ -36,11 +36,13 @@
 }
 
 .btnSaveItem {
-  background-color: skyblue;
+  background-color: #007bff;
+  color: white;
 }
 
 .btnRemoveItem {
   background-color: red;
+  color: white;
 }
 
 .btnUpdateItem {
@@ -49,10 +51,12 @@
 
 .btnGetAllitem {
   background-color: green;
+  color: white;
 }
 
 .btnClear {
   background-color: red;
+  color: white;
 }
 
 .error {
