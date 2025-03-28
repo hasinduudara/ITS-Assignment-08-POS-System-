@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 08</title>
+    <link rel="icon" href="/assets/image/system icon.png" />
+
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/customer.css" />
+    <link rel="stylesheet" href="/css/item.css" />
+    <link rel="stylesheet" href="/css/order.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="main-heading">Dashboard</h2>
+      <nav>
+        <ul>
+          <li><a href="#Home" onclick="setText('Dashboard')">Home</a></li>
+          <li>
+            <a href="#Customer" onclick="setText('customer')">Customer</a>
+          </li>
+          <li><a href="#Item" onclick="setText('item')">Item</a></li>
+          <li><a href="#Orders" onclick="setText('order')">Orders</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <nav id="Home">
+        <div class="container">
+          <div class="card">
+            <h4>Customers</h4>
+            <img src="/assets/image/customer icon.png" alt="customers" />
+            <h3 class="custCount">0</h3>
+          </div>
+          <div class="card">
+            <h4>Items</h4>
+            <img src="/assets/image/item icon.png" alt="customers" />
+            <h3 class="itemCount">0</h3>
+          </div>
+          <div class="card">
+            <h4>My Orders</h4>
+            <img src="/assets/image/order icon.png" alt="customers" />
+            <h3 class="orderCount">0</h3>
+          </div>
+          <div class="card">
+            <h4>Settings</h4>
+            <img src="/assets/image/setting icon.png" alt="customers" />
+            <button>new</button>
+          </div>
+        </div>
+      </nav>
+
+      <nav id="Customer">
+        <form class="form">
+          <div>
+            <h2>Customer Registration</h2>
+            <h5>Customer Id</h5>
+            <input type="text" class="input0 cID" />
+            <br />
+            <span class="error idError"></span>
+            <h5>Customer Name</h5>
+            <input type="text" class="input0 cName" />
+            <br />
+            <span class="error nameError"></span>
+            <h5>Customer Address</h5>
+            <input type="text" class="input0 cAddress" />
+            <br />
+            <span class="error addressError"></span>
+            <h5>Customer Salary</h5>
+            <input type="text" class="input0 cSalary" />
+            <br />
+            <span class="error salaryError"></span>
+          </div>
+          <div class="btns">
+            <button class="btnSave">Save Customer</button>
+            <button class="btnRemove">Remove</button>
+            <button class="btnUpdate">Update</button>
+            <button class="btnGetAll">Get all</button>
+            <button class="btnClear">Clear all</button>
+          </div>
+        </form>
+        <div class="cust-table">
+          <table class="custom">
+            <thead>
+              <tr>
+                <td>Customer Id</td>
+                <td>Customer Name</td>
+                <td>Customer Address</td>
+                <td>Customer Salary</td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </nav>
+
+      <nav id="Item">
+        <form class="form">
+          <div>
+            <h2>Item Form</h2>
+            <h5>Item Code</h5>
+            <input type="text" class="input1 iID" />
+            <br />
+            <span class="error itemIdError"></span>
+            <h5>Item Name</h5>
+            <input type="text" class="input1 iName" />
+            <br />
+            <span class="error itemNameError"></span>
+            <h5>Item Qty</h5>
+            <input type="text" class="input1 Qty" />
+            <br />
+            <span class="error qtyError"></span>
+            <h5>Unit Price</h5>
+            <input type="text" class="input1 unitPrice" />
+            <br />
+            <span class="error priceError"></span>
+          </div>
+          <div class="btns">
+            <button class="btnSaveItem">Add Item</button>
+            <button class="btnRemoveItem">Remove</button>
+            <button class="btnUpdateItem">Update</button>
+            <button class="btnGetAllitem">Get all</button>
+            <button class="btnClear">Clear all</button>
+          </div>
+        </form>
+        <div class="item-table">
+          <table class="items">
+            <thead>
+              <tr>
+                <td>Item Code</td>
+                <td>Item Name</td>
+                <td>Item Qty</td>
+                <td>Item Price</td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </nav>
+
+      <nav id="Orders">
+        <div class="container">
+          <form class="Invoice">
+            <h3>Invoice Details</h3>
+            <div class="txtFields">
+              <div>
+                <h5>Order ID:</h5>
+                <input type="text" class="input orderID" />
+                <br />
+                <span class="error ordError"></span>
+              </div>
+              <div>
+                <h5>Date:</h5>
+                <input type="date" class="input date" />
+              </div>
+              <div>
+                <h5>Customers</h5>
+                <select id="customerID" class="customerChoice">
+                  <option value=""></option>
+                </select>
+              </div>
+              <div>
+                <h5>Customer ID:</h5>
+                <input type="text" class="input custId" />
+              </div>
+              <div>
+                <h5>Name:</h5>
+                <input type="text" class="input custName" />
+              </div>
+              <div>
+                <h5>Salary:</h5>
+                <input type="text" class="input custSalary" />
+              </div>
+            </div>
+            <div>
+              <h5>Address:</h5>
+              <input type="text" class="custAddress" />
+            </div>
+          </form>
+
+          <form class="itemSelect" id="itemForm">
+            <h3>Item Select</h3>
+            <div class="firstField">
+              <div>
+                <h5>Item:</h5>
+                <select id="itemID" class="itemChoice">
+                  <option value=""></option>
+                </select>
+              </div>
+              <div class="icode">
+                <h5>Item Code:</h5>
+                <input type="text" class="input itemCode" />
+              </div>
+            </div>
+            <div class="secondField">
+              <div>
+                <h5>Item Name:</h5>
+                <input type="text" class="input itemName" />
+              </div>
+              <div class="priceses">
+                <h5>Price:</h5>
+                <input type="text" class="input price" />
+              </div>
+              <div class="qtyOnHand">
+                <h5>QtyOnH:</h5>
+                <input type="text" class="input qty" />
+              </div>
+            </div>
+
+            <div class="orderQtys">
+              <h5>Oder Quantity:</h5>
+              <input type="text" class="input orderQty" />
+              <span class="error oQtyError"></span>
+            </div>
+            <div class="btn">
+              <button class="addItem">Add Item</button>
+            </div>
+          </form>
+          <form class="purchase">
+            <h4>Total: <span class="total">00.0</span> Rs/=</h4>
+            <h3>SubTotal: <span class="subTotal">00.0</span> Rs/=</h3>
+            <div class="cashOrder">
+              <div>
+                <h5>Cash</h5>
+                <input type="text" class="input cash" />
+                <br />
+                <span class="error cashError"></span>
+              </div>
+              <div class="disc">
+                <h5>Discount</h5>
+                <input type="text" class="input discount" />
+              </div>
+            </div>
+            <div></div>
+            <h5>Balance</h5>
+            <input type="text" class="input balance" />
+            <div class="btnPurchase">
+              <button class="purchases">purchase</button>
+            </div>
+          </form>
+        </div>
+        <div class="orderTableContainer">
+          <table class="order-table">
+            <thead>
+              <tr>
+                <td>Item Code</td>
+                <td>Item Name</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td class="row-total">Total</td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </nav>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="/controllers/IndexController.js"></script>
+    <script type="module" src="/controllers/CustomerController.js"></script>
+    <script type="module" src="/controllers/ItemController.js"></script>
+    <script type="module" src="/controllers/OrderController.js"></script>
+  </body>
+</html>

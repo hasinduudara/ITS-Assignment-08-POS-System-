@@ -1,0 +1,128 @@
+#Customer {
+  display: flex;
+  height: 100vh;
+  margin-top: 70px;
+}
+.form {
+  margin-left: 10px;
+  margin-top: 70px;
+}
+.input0 {
+  width: 350px;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(205, 205, 205);
+}
+.form h5 {
+  margin: 1px 0;
+  padding: 0 0;
+  margin-top: 40px;
+}
+.main-heading {
+  width: 300px;
+}
+.btns {
+  margin-top: 30px;
+  display: flex;
+}
+.form button {
+  margin: 0;
+  height: 30px;
+  border: transparent;
+}
+.btnSave {
+  background-color: skyblue;
+}
+.btnRemove {
+  background-color: red;
+}
+.btnUpdate {
+  background-color: yellow;
+}
+.btnGetAll {
+  background-color: green;
+}
+.btnClear {
+  background-color: red;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.cust-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 50px;
+  table-layout: auto;
+  margin-top: 70px;
+}
+table {
+  border-collapse: collapse;
+  width: 95%;
+}
+thead tr,
+td {
+  height: 30px;
+  padding-left: 10px;
+  border: 1px solid rgb(186, 186, 186);
+}
+
+thead {
+  background-color: red;
+  color: white;
+  width: 100%;
+}
+.cust-table {
+  height: 450px;
+  overflow-y: scroll;
+  margin-left: 20px;
+}
+
+tbody {
+  background-color: white;
+  color: black;
+}
+
+input[type="text"]:focus {
+  border: 3px solid skyblue;
+}
+
+tbody tr:hover {
+  background-color: rgb(186, 186, 186);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  #Customer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 550px) {
+  .input0 {
+    width: 300px;
+  }
+  #Customer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    height: auto;
+    margin-top: 70px;
+  }
+  table {
+    font-size: 12px;
+  }
+}
